@@ -121,10 +121,10 @@ const MovieForm = (props) => {
   const [type, setType] = useState("");
   const [image, setImage] = useState([]);
   // const [response, setResponse]
-  
+
   // console.log(props.handleAddMovie)
 
- 
+
   const myFunction = () => {
     document.getElementById("myDropdown").classList.toggle("show");
   }
@@ -132,92 +132,92 @@ const MovieForm = (props) => {
   return (
     <div>
       <label>Title: </label>
-      <input type="text" onChange={(e)=>{setTitle(e.target.value)}}/>
-      <br/>
+      <input type="text" onChange={(e) => { setTitle(e.target.value) }} />
+      <br />
 
       <label>Year: </label>
-      <input type="number" onChange={(e)=>{setYear(e.target.value)}}/>
-      <br/>
+      <input type="number" onChange={(e) => { setYear(e.target.value) }} />
+      <br />
 
       <label>Rated: </label>
-      <input type="number" onChange={(e)=>{setRated(e.target.value)}}></input>
-      <br/>
+      <input type="number" onChange={(e) => { setRated(e.target.value) }}></input>
+      <br />
 
       <label>Released: </label>
-      <input type="date" onChange={(e)=>{setRealeased(e.target.value)}}></input>
-      <br/>
+      <input type="date" onChange={(e) => { setRealeased(e.target.value) }}></input>
+      <br />
 
       <label>Runtime: </label>
-      <input type="number" onChange={(e)=>{setRuntime(e.target.value)}}></input>
-      <br/>
+      <input type="number" onChange={(e) => { setRuntime(e.target.value) }}></input>
+      <br />
 
       <label>Genre: </label>
-      <input type="text" onChange={(e)=>{setGenre(e.target.value)}}></input>
-      <br/>
+      <input type="text" onChange={(e) => { setGenre(e.target.value) }}></input>
+      <br />
 
       <label>Director: </label>
-      <input type="text" onChange={(e)=>{setDirector(e.target.value)}}/>
-      <br/>
+      <input type="text" onChange={(e) => { setDirector(e.target.value) }} />
+      <br />
 
       <label>Writer: </label>
-      <input type="text" onChange={(e)=>{setWriter(e.target.value)}}/>
-      <br/>
+      <input type="text" onChange={(e) => { setWriter(e.target.value) }} />
+      <br />
 
       <label>Actors: </label>
-      <input type="text" onChange={(e)=>{setActors(e.target.value)}}/>
-      <br/>
+      <input type="text" onChange={(e) => { setActors(e.target.value) }} />
+      <br />
 
       <label>Plot: </label>
-      <input type="text" onChange={(e)=>{setPlot(e.target.value)}}/>
-      <br/>
+      <input type="text" onChange={(e) => { setPlot(e.target.value) }} />
+      <br />
 
       <label>Language: </label>
-      <input type="text" onChange={(e)=>{setLanguage(e.target.value)}}/>
-      <br/>
+      <input type="text" onChange={(e) => { setLanguage(e.target.value) }} />
+      <br />
 
       <label>Country: </label>
-      <input type="text" onChange={(e)=>{setCountry(e.target.value)}}/>
-      <br/>
+      <input type="text" onChange={(e) => { setCountry(e.target.value) }} />
+      <br />
 
       <label>Awards: </label>
-      <input type="text" onChange={(e)=>{setAwards(e.target.value)}}/>
-      <br/>
-  
+      <input type="text" onChange={(e) => { setAwards(e.target.value) }} />
+      <br />
+
       <label>Poster: </label>
-      <input type="text" onChange={(e)=>{setPoster(e.target.value)}}/>
-      <br/>
+      <input type="text" onChange={(e) => { setPoster(e.target.value) }} />
+      <br />
 
       <label>Metascore: </label>
-      <input type="text" onChange={(e)=>{setMetascore(e.target.value)}}/>
-      <br/>
+      <input type="text" onChange={(e) => { setMetascore(e.target.value) }} />
+      <br />
 
       <label>Imdb Rating: </label>
-      <input type="number" step="0.1" onChange={(e)=>{setImbdRating(e.target.value)}}/>
-      <br/>
+      <input type="number" step="0.1" onChange={(e) => { setImbdRating(e.target.value) }} />
+      <br />
 
       <label>Imdb Votes: </label>
-      <input type="number" step="0.1" onChange={(e)=>{setImbdVotes(e.target.value)}}/>
-      <br/>
-      
+      <input type="number" step="0.1" onChange={(e) => { setImbdVotes(e.target.value) }} />
+      <br />
+
       <label>Imdb ID: </label>
-      <input type="text" step="0.1" onChange={(e)=>{setImbdID(e.target.value)}}/>
-      <br/>
+      <input type="text" step="0.1" onChange={(e) => { setImbdID(e.target.value) }} />
+      <br />
 
       <label>Type: </label>
-      <input type="text" onChange={(e)=>{setType(e.target.value)}}/>
-      <br/>
+      <input type="text" onChange={(e) => { setType(e.target.value) }} />
+      <br />
 
       <label>Image: </label>
-      <input type="text" onChange={(e)=>{setImage(e.target.value)}}/>
+      <input type="text" onChange={(e) => { setImage(e.target.value) }} />
       <div className="dropdown">
-<button onClick={myFunction} className="dropbtn">Dropdown</button>
-<div id="myDropdown" className="dropdown-content">
-  <a href="#">Link 1</a>
-  <a href="#">Link 2</a>
-  <a href="#">Link 3</a>
-</div>
-</div>
-      
+        <button onClick={myFunction} className="dropbtn">Dropdown</button>
+        <div id="myDropdown" className="dropdown-content">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">Link 3</a>
+        </div>
+      </div>
+
       <p>Current Title: {title}</p>
       <p>Current Year: {year}</p>
       <p>Currently Rated: {rated}</p>
@@ -225,7 +225,7 @@ const MovieForm = (props) => {
       <p>Current Runtime: {runtime}</p>
       <p>Current Genre: {genre}</p>
       <p>Current Director: {director}</p>
-      <p>Current Writer: {writer}</p>
+      {/* <p>Current Writer: {writer}</p>
       <p>Current Actors: {actors}</p>
       <p>Current Plot: {plot}</p>
       <p>Current Language: {language}</p>
@@ -237,9 +237,9 @@ const MovieForm = (props) => {
       <p>Current Imbd Votes: {imbdvotes}</p>
       <p>Current Imbd ID: {imbdid}</p>
       <p>Current Type: {type}</p>
-      <p>Current Image: {image}</p>
-      
-      <button onClick={()=>{
+      <p>Current Image: {image}</p> */}
+
+      <button onClick={() => {
         const newMovie = {
           Title: title,
           Year: year,
@@ -265,13 +265,38 @@ const MovieForm = (props) => {
         // props here is allowing us to invoke handleAddMovie from another scope because its not global and the only way we can invoke it in here is by props.
         props.handleAddMovie(newMovie)
         console.log(newMovie)
-}}>Add Movie</button>
-</div>
+      }}>Add Movie</button>
+    </div>
   )
 }
 
 
+const MoviesDisplay = (props) => {
+  return (
+    <div>
+      {props.movieList.map((movie, index) => {
+        return <MovieItem movie={movie} key={index} />
+      })}
+    </div>
+  )
+};
 
+
+
+
+const MovieItem = (props) => {
+  return (
+    <div>
+      <h2>Title: {props.movie.Title}</h2>
+      <p>Year: {props.movie.Year}</p>
+      <p>Rated: {props.movie.Rated}</p>
+      <p>Released: {props.movie.Released}</p>
+      <p>Runtime: {props.movie.Runtime}</p>
+      <p>Director: {props.movie.Director}</p>
+
+    </div>
+  )
+}
 
 
 
@@ -279,7 +304,7 @@ const MovieForm = (props) => {
 const App = () => {
 
   // starts of as an EMPTY ARRAY
-  const [movieList, setMovieList] = useState([]);
+  const [movieList, setMovieList] = useState(sampleMovies);
   const handleAddMovie = (newMovie) => {
     const movieListCopy = [...movieList, newMovie]
     // code below is calling setMovieList with the new updated MovieListCopy which has all of the previous entries of movieList along with the newMovie
@@ -287,18 +312,148 @@ const App = () => {
   }
 
   console.log(movieList)
-  
+
   return (
     <div className="App">
       <h1>Movie Form</h1>
       <header className="App-header">
         {/* handleAddMovie ={handleAddMovie} is calling the function and saying the value is going to be w.e it returns from it???? */}
         {/* variable = {function} */}
-        <MovieForm handleAddMovie={handleAddMovie}/>
+        <MovieForm handleAddMovie={handleAddMovie} />
+        <MoviesDisplay movieList={movieList} />
 
       </header>
     </div>
   );
 }
+
+
+
+
+// import logo from './logo.svg';
+// import './App.css';
+// import { useState } from "react";
+
+// const sampleMovies = [
+//   ...sampleMovies
+// ]
+
+// const MovieComponent = (props) => {
+// 	console.log(props.movie)
+// 	const movie = props.movie
+// 	return (
+// 		<div>
+// 			<h1>{movie.title}</h1>
+// 			{/* <img src={movie.poster}></img> */}
+// 		</div>
+// 	)
+// }
+
+// const MovieForm = (props) => {
+
+// 	const [Title, setTitle] = useState("")
+// 	const [Director, setDirector] = useState("")
+// 	const [imageUrl, setImageUrl] = useState("")
+// 	const [selectedMovie, setSelectedMovie] = useState("")
+
+// 	return (
+// 		<div>
+// 			<label>Title:</label>
+// 			<input type="text" onChange={(e)=>{
+// 				setTitle(e.target.value)
+// 			}}/>
+// 			<p>Current Title: {Title}</p>
+// 			<button onClick={()=>{
+// 				const newMovie = {
+// 					Title,
+// 					Director,
+// 					Images: [
+// 						"some url", "some other url"
+// 					]
+// 				}
+// 				props.handleAddMovie(newMovie)
+// 			}}>Add Movie</button>
+// 			<br/>
+
+// 			<select onChange={(e)=>{
+// 				setSelectedMovie(e.target.value)
+// 			}}>
+// 				{props.movieList.map((movie)=>{
+// 					return (
+// 						<option value={movie.Title}>{movie.Title}</option>
+// 					)
+// 				})}
+// 			</select>
+
+// 			<input type="text" onChange={(e)=>{
+// 				setImageUrl(e.target.value)
+// 			}}/>
+// 			<button onClick={()=>{
+// 				props.handleAddImageToMovie(selectedMovie, imageUrl)
+// 			}}>Add Image</button>
+// 		</div>
+// 	)
+// }
+
+// const MoviesDisplay = (props) => {
+// 	return (
+// 		<div>
+// 			{props.movieList.map((movie, index)=>{
+// 				return <MovieItem movie={movie} key={index}/>
+// 			})}
+// 		</div>
+// 	)
+// }
+
+// const MovieItem = (props) => {
+// 	return (
+// 		<div>
+// 			<h1>{props.movie.Title}</h1>
+// 			<p>{props.movie.Director}</p>
+// 			{props.movie.Images && props.movie.Images.map((imageUrl)=>{
+// 				console.log(imageUrl)
+// 				return (<p>{imageUrl}</p>)
+// 			})}
+// 			<hr/>
+// 		</div>
+// 	)
+// }
+
+// function App() {
+
+// 	const [movieList, setMovieList] = useState(sampleMovies)
+
+// 	const handleAddMovie = (newMovie) => {
+// 		const movieListCopy = [ ...movieList, newMovie ];
+// 		// movieListCopy.push(newMovie)
+// 		// setMovieList(movieListCopy)
+// 		setMovieList(movieListCopy)
+// 	}
+
+// 	const handleAddImageToMovie = (movieTitleToTarget, imageUrlToAdd) => {
+// 		const movieListCopy = [ ...movieList ];
+
+// 		const movieTargetIndex = movieListCopy.findIndex((movie)=>{
+// 			return movie.Title === movieTitleToTarget
+// 		})
+// 		movieListCopy[movieTargetIndex].Images.push(imageUrlToAdd)
+
+// 		setMovieList(movieListCopy)
+// 	}
+
+// 	console.log(movieList)
+//   return (
+//     <div className="App App-header">
+//       <MovieForm handleAddMovie={handleAddMovie} movieList={movieList} handleAddImageToMovie={handleAddImageToMovie}/>
+// 			<MoviesDisplay movieList={movieList} />
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+
 
 export default App;
